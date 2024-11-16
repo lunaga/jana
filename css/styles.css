@@ -15,15 +15,17 @@ body {
 
 .container {
     max-width: 100%;
+    width: 100%;
     margin: 2rem auto;
     height: 2rem;
-    padding: 0 10px;
+    padding:  10px;
 }
 
-/* Navegación */
+/** Navegación */
+
 nav {
     background-color: #2c5e1a;
-    padding: 1rem 0;
+    padding: 10px;
 }
 
 nav .container {
@@ -33,7 +35,7 @@ nav .container {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     animation: pulse 2s infinite;
@@ -76,12 +78,14 @@ nav ul li a:hover {
     color: #a3e635;
 }
 
-/* Hero Section */
+/*? Hero Section */ 
+
 .hero {
     background-image: url('../img/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,13 +167,14 @@ nav ul li a:hover {
 }
 
 
-/* Hero Riego */
+/*? Hero Riego */
 
 .heroriego {
     background-image: url('../img/riegoheros.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +211,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Hero Mantenimiento */
+/*? Hero Mantenimiento */
 
 .heromantenimiento {
     background-image: url('../img/podahero.jpg');
@@ -249,7 +254,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Hero Pieletas */
+/*? Hero Pieletas */
 
 .heropiletas {
     background-image: url('../img/piletahero.webp');
@@ -292,7 +297,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Hero Diseños */
+/*? Hero Diseños */
 
 .herodiseño {
     background-image: url('../img/diseños.jpg');
@@ -335,58 +340,61 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* About */
-/* Estilos generales para la sección About */
+/** About */
+
+
 .about {
-    margin:5rem;
+    margin: 5rem;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5rem;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255); /* Fondo claro, puedes ajustarlo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
 }
 
-/* Estilos para la columna de texto */
+.about-column {
+    flex: 1;
+    padding: 0.8rem;
+}
+
 .about-text {
     flex: 1;
-    padding: 1.8rem;
 }
 
 .about h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
-    color: #333; /* Color de texto */
+    color: #333; 
 }
 
 .about p {
     font-size: 1.5rem;
     line-height: 1.6;
-    color: #555; /* Color del párrafo */
-}
-.about {
-    opacity: 0; /* Inicia con opacidad 0, lo que lo hace invisible */
-    transform: translateX(-100%); /* Lo coloca fuera de la pantalla a la izquierda */
-    animation: slideIn 1.5s forwards; /* Aplica la animación 'slideIn' */
+    color: #555; 
 }
 
-/* Definición de la animación 'slideIn' */
+.about {
+    opacity: 0; 
+    transform: translateX(-100%); 
+    animation: slideIn 1.5s forwards; 
+}
+
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-100%); /* Comienza desde la izquierda fuera de la pantalla */
+        transform: translateX(-100%); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
+        transform: translateX(0); 
     }
 }
-/* Estilos para la columna de la imagen */
+
 .about-image {
     flex: 1;
-    max-width: 100%; /* Limita el ancho de la imagen */
+    max-width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,12 +403,12 @@ nav ul li a:hover {
 .about-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados opcionales */
+    border-radius: 8px; 
 }
 
-/* contenido */
+/** contenido */
 
-/* Estilo para el contenedor principal */
+
 .contenido {
     margin:5rem;
     border-radius: 15px;
@@ -408,29 +416,28 @@ nav ul li a:hover {
     align-items: center;
     padding: 5rem;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255); /* Fondo claro, puedes ajustarlo */
+    background-color: rgb(255, 255, 255); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: 1fr; /* Dos columnas de igual tamaño */
-    gap: 5rem; /* Espacio entre las columnas */
+    grid-template-columns: 1fr; 
+    gap: 5rem; 
 }
 
-/* Estilo para cada ítem dentro de la cuadrícula */
+
 .grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Estilo para las imágenes */
+
 .imagen img {
     max-height: 400px;
     max-width: 700px;
     margin: 2rem;
-    border-radius: 15px; /* Bordes redondeados para las imágenes */
+    border-radius: 15px; 
 }
 
-/* Estilo para los párrafos */
 .texto p {
     margin: 1.8rem;
     font-size: 1.2rem;
@@ -440,7 +447,16 @@ nav ul li a:hover {
 }
 
 
-/* Servicios */
+/** Servicios */
+
+.servicios{
+    align-items: center;
+}
+
+.servicios h2{
+    align-items: center;
+}
+
 .services {
     margin: 5rem;
     border-radius: 15px;
@@ -448,7 +464,7 @@ nav ul li a:hover {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
 }
 
@@ -486,15 +502,15 @@ nav ul li a:hover {
     border-radius: 15px;
 }
 
-/* Sistema */
+/** Sistema */
 
 .sistemas {
     margin: 5rem;
     border-radius: 15px;
     display: flex;
-    flex-direction: column; /* Cambiado a columna */
+    flex-direction: column; 
     justify-content: center;
-    align-items: flex-start; /* Alineado al inicio */
+    align-items: flex-start; 
     padding: 5rem;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
@@ -507,7 +523,7 @@ nav ul li a:hover {
     font-family: Arial, sans-serif;
     font-weight: 500;
     font-style: normal;
-    margin-bottom: 1.5rem; /* Añadido un margen abajo para separación con el párrafo */
+    margin-bottom: 1.5rem; 
 }
 
 .sistemas p {
@@ -516,26 +532,24 @@ nav ul li a:hover {
     font-weight: 400;
     font-style: normal;
 }
-/* Estilo inicial para el div que contiene el texto */
+
 .sistemas {
-    opacity: 0; /* Inicia con opacidad 0, lo que lo hace invisible */
-    transform: translateX(-100%); /* Lo coloca fuera de la pantalla a la izquierda */
-    animation: slideIn 1.5s forwards; /* Aplica la animación 'slideIn' */
+    opacity: 0; 
+    transform: translateX(-100%); 
+    animation: slideIn 1.5s forwards; 
 }
 
-/* Definición de la animación 'slideIn' */
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-100%); /* Comienza desde la izquierda fuera de la pantalla */
+        transform: translateX(-100%); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
+        transform: translateX(0); 
     }
 }
 
-/* Puedes agregar otros estilos de la sección para personalizarla según tus necesidades */
 .sistemas h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -547,76 +561,75 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* carrousel */
+/** carrousel */
 
-/* Estilos para el contenedor del carrusel */
+
 .carousel-container {
     display: flex;
-    justify-content: center; /* Centra el carrusel horizontalmente */
-    width: 80%; /* Ajusta el ancho al 80% de la pantalla (puedes modificar este valor) */
-    margin: 0 auto; /* Centra el contenedor en la página */
+    justify-content: center; 
+    width: 80%; 
+    margin: 0 auto; 
 }
 
-/* Estilo de las imágenes dentro del carrusel */
+
 .carousel-inner .carousel-item img {
     border-radius: 15px;
-    width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
+    width: 100%; 
     max-width: 700px;
     max-height: 500px;
-    height: 500px; /* Establece una altura fija para las imágenes */
-    object-fit: cover; /* Mantiene la proporción y cubre el área sin distorsionar la imagen */
+    height: 500px; 
+    object-fit: cover; 
 }
 
-/* Si deseas que el carrusel ocupe menos espacio vertical */
+
 .carousel {
-    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
-    max-height: 500px; /* Limita la altura máxima */
+    max-width: 100%; 
+    max-height: 500px; 
 }
 
 
 
-/* acordion */
+/** acordion */
 
 
-/* Cambiar el fondo y el color del texto del acordeón */
 .accordion-button {
-    background-color: #2c5e1a; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
+    background-color: #2c5e1a; 
+    color: white; 
     font-weight: bold;
-    border: none; /* Eliminar bordes */
+    border: none;
 }
 
 .accordion-button:hover {
-    background-color: #2c5e1a; /* Color al pasar el ratón */
+    background-color: #2c5e1a; 
 }
 
 .accordion-button:focus {
-    box-shadow: none; /* Eliminar el resplandor cuando se hace clic */
+    box-shadow: none; 
 }
 
-/* Color del texto cuando el acordeón está expandido */
+
 .accordion-button:not(.collapsed) {
-    background-color: #3e8e41; /* Fondo cuando está expandido */
-    color: white; /* Mantener el color blanco */
+    background-color: #3e8e41; 
+    color: white; 
 }
 
-/* Cambiar el fondo del cuerpo del acordeón */
+
 .accordion-body {
-    background-color: #f4f4f4; /* Color de fondo del cuerpo */
-    color: #333; /* Color del texto */
+    background-color: #f4f4f4; 
+    color: #333; 
 }
 
-/* Estilos para los elementos del acordeón en estado colapsado */
+
 .accordion-button.collapsed {
-    background-color: #3e8e41; /* Color de fondo cuando el acordeón está colapsado */
-    color: #333; /* Color del texto cuando está colapsado */
+    background-color: #3e8e41; 
+    color: #333; 
 }
 
 
 .accordion {
-    opacity: 0; /* Inicia con opacidad 0, lo que lo hace invisible */
-    transform: translateX(-100%); /* Lo coloca fuera de la pantalla a la izquierda */
-    animation: slideIn 2s forwards; /* Aplica la animación 'slideIn' */
+    opacity: 0; 
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards; 
 }
 .accordion{
     margin:5rem;
@@ -639,16 +652,16 @@ nav ul li a:hover {
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-100%); /* Comienza desde la izquierda fuera de la pantalla */
+        transform: translateX(-100%); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
+        transform: translateX(0); 
     }
 }
 
 
-/* Clientes y Reseñas */
+/** Clientes y Reseñas */
 .testimonials {
     margin: 5rem;
 }
@@ -666,7 +679,8 @@ nav ul li a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Galería */
+/** Galería */
+
 .gallery {
     margin: 5rem;
     background-color: white;
@@ -694,7 +708,9 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Contacto */
+
+/** Contacto */
+
 .contact {
     margin: 2rem;
 }
@@ -727,6 +743,8 @@ nav ul li a:hover {
     background-color: #1e3f12;
 }
 
+/*? Footer */
+
 /* Footer */
 footer {
     width: 100%;
@@ -736,24 +754,47 @@ footer {
 }
 
 .footer-content {
+    width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.footer-content img{
+
+.footer-content img {
     width: 10rem;
     border-radius: 15px;
     margin-bottom: 2rem;
 }
+
 .footer-section {
     flex: 1;
     margin-right: 2rem;
     min-width: 200px;
+    width: 100%;
 }
 
 .footer-section h3 {
     margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a3e635;
 }
 
 .social-icons a {
@@ -765,4 +806,90 @@ footer {
 
 .social-icons a:hover {
     color: #a3e635;
+}
+
+
+/*? Medias Queries */
+
+/*! MQ NAV 
+
+/* Media query para pantallas menores a 950px */
+@media screen and (max-width: 950px) {
+    nav .container {
+        flex-direction: column; /* Coloca los elementos en columnas */
+        align-items: center;   /* Centra los elementos */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Espacio entre el logo y los enlaces */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca los enlaces en una columna */
+        width: 100%;           /* Ocupa todo el ancho disponible */
+        text-align: center;    /* Centra los enlaces */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Espaciado vertical entre los enlaces */
+    }
+
+    .logo img {
+        width: 8rem; /* Ajusta el tamaño del logo para que se vea proporcionado */
+    }
+}
+
+/*! MQ ABOUT */
+
+/* Media query para pantallas menores a 950px */
+@media screen and (max-width: 950px) {
+    .about {
+        flex-direction: column; /* Cambia la disposición a columnas */
+        text-align: center;    /* Centra el texto e imagen */
+    }
+
+    .about-image {
+        margin-top: 2rem; /* Espacio entre el texto y la imagen */
+    }
+}
+/* Media query para pantallas entre 700px y 320px */
+@media screen and (max-width: 700px) {
+    .about {
+        padding: 2rem; /* Reduce el padding para evitar espacios grandes */
+        margin: 2rem;
+    }
+
+    .about h2 {
+        font-size: 1.8rem; /* Reduce el tamaño del título */
+    }
+
+    .about p {
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+    }
+
+    .about-image img {
+        max-width: 90%; /* Asegura que la imagen no ocupe toda la pantalla */
+        margin-top: 1.5rem; /* Espacio adicional entre texto e imagen */
+    }
+}
+
+/* Media query para pantallas menores a 320px */
+@media screen and (max-width: 320px) {
+    .about {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .about h2 {
+        font-size: 1.6rem; /* Ajuste adicional del tamaño del título */
+    }
+
+    .about p {
+        font-size: 1rem; /* Texto aún más pequeño */
+    }
+
+    .about-image img {
+        max-width: 100%;
+        border-radius: 5px; /* Reduce el radio de las esquinas */
+    }
 }
