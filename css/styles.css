@@ -813,31 +813,7 @@ footer {
 
 /*! MQ NAV 
 
-/* Media query para pantallas menores a 950px */
-@media screen and (max-width: 950px) {
-    nav .container {
-        flex-direction: column; /* Coloca los elementos en columnas */
-        align-items: center;   /* Centra los elementos */
-    }
 
-    .logo {
-        margin-bottom: 10px; /* Espacio entre el logo y los enlaces */
-    }
-
-    nav ul {
-        flex-direction: column; /* Coloca los enlaces en una columna */
-        width: 100%;           /* Ocupa todo el ancho disponible */
-        text-align: center;    /* Centra los enlaces */
-    }
-
-    nav ul li {
-        margin: 0.5rem 0; /* Espaciado vertical entre los enlaces */
-    }
-
-    .logo img {
-        width: 8rem; /* Ajusta el tamaño del logo para que se vea proporcionado */
-    }
-}
 
 /*! MQ ABOUT */
 
